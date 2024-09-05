@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exibir Estoque de Doação</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h2>Estoque de Doação</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Data</th>
+                <th>Material</th>
+                <th>Quantidade</th>
+                <th>Referência</th>
+                <th>Fabricante</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% estoque.forEach(item => { %>
+                <tr>
+                    <td><%= item.id %></td>
+                    <td><%= item.data %></td>
+                    <td><%= item.material %></td>
+                    <td><%= item.quantidade %></td>
+                    <td><%= item.referencia %></td>
+                    <td><%= item.fabricante %></td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+    <br>
+    <button onclick="window.location.href='/menu'">Voltar ao Menu</button>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório de Todas as Entradas</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h2>Relatório de Todas as Entradas</h2>
+    <h3>Estoque Normal</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Data</th>
+                <th>Material</th>
+                <th>Quantidade</th>
+                <th>Referência</th>
+                <th>Fabricante</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% estoqueNormal.forEach(item => { %>
+                <tr>
+                    <td><%= item.id %></td>
+                    <td><%= item.data %></td>
+                    <td><%= item.material %></td>
+                    <td><%= item.quantidade %></td>
+                    <td><%= item.referencia %></td>
+                    <td><%= item.fabricante %></td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+
+    <h3>Estoque de Doação</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Data</th>
+                <th>Material</th>
+                <th>Quantidade</th>
+                <th>Referência</th>
+                <th>Fabricante</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% estoqueDoacao.forEach(item => { %>
+                <tr>
+                    <td><%= item.id %></td>
+                    <td><%= item.data %></td>
+                    <td><%= item.material %></td>
+                    <td><%= item.quantidade %></td>
+                    <td><%= item.referencia %></td>
+                    <td><%= item.fabricante %></td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+    <br>
+    <button onclick="window.location.href='/relatorio'">Voltar ao Relatório</button>
+</body>
+</html>

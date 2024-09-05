@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Material</title>
+</head>
+<body>
+    <h2>Cadastrar Material</h2>
+    <form action="/cadastrar-material" method="POST">
+        <label for="material">Material:</label><br>
+        <input type="text" id="material" name="material" required><br><br>
+        
+        <label for="fabricante">Fabricante:</label><br>
+        <input type="text" id="fabricante" name="fabricante" required><br><br>
+        
+        <label for="referencia">Referência:</label><br>
+        <input type="text" id="referencia" name="referencia" required><br><br>
+        
+        <label for="quantidade">Quantidade:</label><br>
+        <input type="number" id="quantidade" name="quantidade" required><br><br>
+        
+        <label for="unidade">UN:</label><br>
+        <input type="hidden" id="unidade" name="unidade" value="UN">
+        <button type="button" onclick="setUnidade()">Unidade</button><br><br>
+        
+        <label>Estoque:</label><br>
+        <input type="radio" id="normal" name="estoque" value="normal" required>
+        <label for="normal">Normal</label><br>
+        <input type="radio" id="doacao" name="estoque" value="doacao" required>
+        <label for="doacao">Doação</label><br><br>
+        
+        <button type="submit">Salvar</button>
+    </form>
+    <br>
+    <a href="/menu">Voltar ao Menu</a>
+    
+    <script>
+        function setUnidade() {
+            document.getElementById('unidade').value = 'UN';
+            alert('Quantidade está em unidades');
+        }
+    </script>
+</body>
+</html>

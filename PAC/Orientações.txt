@@ -1,0 +1,21 @@
+Aluno: Gustavo Vieira Wesolowski
+	Guilherme Peters Renzo 
+	Ariane Ferreira de Andrade
+
+
+Nosso sistema de estoque está quase pronto, estamos cerca de 80% concluídos! A única coisa que falta é finalizar o histórico de entrada e saída e estilisar as telas.
+
+Todas as funcionalidades estão operando corretamente, o que é ótimo. No sistema, temos dois tipos de estoque: um normal e outro para doações que recebemos.
+
+Para adicionar qualquer material a um dos estoques, é preciso cadastrá-lo primeiro. Da mesma forma, para retirar algum material, basta realizar o procedimento de saida.
+
+Para conferir o que foi adicionado ao estoque, você pode acessar o relatório de entrada ou verificar cada estoque.
+
+Ah, e para acessar o sistema, lembre-se das credenciais:
+
+Usuário: teste
+Senha: 123
+
+Favor não esquecer de conectar ao banco.
+
+Se precisar de mais alguma coisa, estou à disposição!

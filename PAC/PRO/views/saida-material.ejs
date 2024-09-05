@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saída de Material</title>
+</head>
+<body>
+    <h2>Saída de Material</h2>
+    <form action="/saida-material" method="POST">
+        <label for="codigo">Código:</label>
+        <input type="text" id="codigo" name="codigo" required><br><br>
+
+        <label for="quantidade">Quantidade:</label>
+        <input type="number" id="quantidade" name="quantidade" required><br><br>
+
+        <label for="estoque">Estoque:</label>
+        <select id="estoque" name="estoque" required>
+            <option value="normal">Normal</option>
+            <option value="doacao">Doação</option>
+        </select><br><br>
+
+        <button type="submit">Salvar</button>
+        <button type="button" onclick="window.location.href='/menu'">Voltar ao Menu</button>
+    </form>
+</body>
+</html>
